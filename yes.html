@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The SPTEL Boy – Official Channel Site</title>
+  <!--
+    HOW TO USE (quick):
+    1) Save this as index.html
+    2) Put your picture file next to it named: channels4_profile.jpg
+       (or replace AVATAR_URL below with a full https image URL)
+    3) Double‑click index.html to open in Chrome.
+    Replace anything marked TODO.
+  -->
+  <style>
+    :root { --bg1:#ef4444; --bg2:#f59e0b; --bg3:#a21caf; --ring: rgba(255,255,255,.15); }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));color:#fff}
+    a{color:inherit}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+    header{backdrop-filter:saturate(120%) blur(8px);background:rgba(0,0,0,.35);border-bottom:1px solid var(--ring)}
+    .head{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;border:3px solid var(--ring);box-shadow:0 6px 16px rgba(0,0,0,.35)}
+    h1{margin:0;font-size:26px;letter-spacing:.5px;text-transform:uppercase}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#dc2626;border:1px solid var(--ring);font-weight:700;text-decoration:none;box-shadow:0 6px 14px rgba(0,0,0,.25)}
+    section{padding:28px 0}
+    h2{margin:0 0 10px;font-size:24px}
+    .card{background:rgba(0,0,0,.35);border:1px solid var(--ring);border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
+    .grid{display:grid;gap:14px}
+    @media(min-width:640px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-5{grid-template-columns:repeat(5,1fr)}}
+    .aspect-video{position:relative;padding-top:56.25%}
+    .aspect-9-16{position:relative;padding-top:177.78%}
+    .frame{position:absolute;inset:0;border:0;width:100%;height:100%}
+    .comments{padding:14px}
+    .comment{padding:10px 0;border-bottom:1px solid var(--ring)}
+    .comment:last-child{border-bottom:0}
+    .tag{color:#fde047;font-weight:700}
+    /* Game */
+    .gameBox{padding:16px}
+    canvas{display:block;width:100%;max-width:500px;height:auto;border:2px solid #fff;margin-inline:auto;background:#111;border-radius:14px}
+    .muted{color:rgba(255,255,255,.85)}
+    footer{padding:24px 0;border-top:1px solid var(--ring);background:rgba(0,0,0,.35)}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="wrap head">
+      <div class="brand">
+        <!-- Avatar: uses local file name so you can just drop the image next to index.html -->
+        <img class="avatar" src="channels4_profile.jpg" alt="SPTEL avatar" />
+        <div>
+          <h1>The SPTEL Boy</h1>
+          <div class="muted">Gaming • Shorts • Live</div>
+        </div>
+      </div>
+      <!-- TODO: replace CHANNEL_ID below if you have a different one -->
+      <a class="btn" href="https://www.youtube.com/channel/@thesptelboy2.030sub_confirmation=1" target="_blank">Subscribe</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- LIVE COUNTER -->
+    <section>
+      <h2>Live Subscriber Counter</h2>
+      <div class="card" style="height:200px">
+        <iframe class="frame" title="Live Sub Counter" src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCkH6j8ao1hcqqDQFdMbF7zQ" allow="clipboard-write"></iframe>
+      </div>
+    </section>
+
+    <!-- POPULAR VIDEOS (3 real + 2 filler) -->
+    <section>
+      <h2>Popular Videos</h2>
+      <div class="grid cols-5">
+        <div class="card aspect-video"><iframe class="frame" src="https://www.youtube.com/embed/ZuZik-WZ_t4?autoplay=1&mute=1&loop=1&playlist=ZuZik-WZ_t4" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-video"><iframe class="frame" src="https://www.youtube.com/embed/tu9nOe8Q3Ic?autoplay=1&mute=1&loop=1&playlist=tu9nOe8Q3Ic" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-video"><iframe class="frame" src="https://www.youtube.com/embed/FdY7Bsi4wHk?autoplay=1&mute=1&loop=1&playlist=FdY7Bsi4wHk" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <!-- Filler videos – replace with your own IDs anytime -->
+        <div class="card aspect-video"><iframe class="frame" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-video"><iframe class="frame" src="https://www.youtube.com/embed/3JZ_D3ELwOQ?autoplay=1&mute=1&loop=1&playlist=3JZ_D3ELwOQ" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+      </div>
+    </section>
+
+    <!-- SHORTS (5) -->
+    <section>
+      <h2>Shorts</h2>
+      <div class="grid cols-5">
+        <div class="card aspect-9-16"><iframe class="frame" src="https://www.youtube.com/embed/4E_ygr1QvlU?autoplay=1&mute=1&loop=1&playlist=4E_ygr1QvlU" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-9-16"><iframe class="frame" src="https://www.youtube.com/embed/iJXPzW-n978?autoplay=1&mute=1&loop=1&playlist=iJXPzW-n978" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-9-16"><iframe class="frame" src="https://www.youtube.com/embed/Vjz7u9c8O_Q?autoplay=1&mute=1&loop=1&playlist=Vjz7u9c8O_Q" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-9-16"><iframe class="frame" src="https://www.youtube.com/embed/O7FK5hQ_YnI?autoplay=1&mute=1&loop=1&playlist=O7FK5hQ_YnI" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+        <div class="card aspect-9-16"><iframe class="frame" src="https://www.youtube.com/embed/UZVQN07C3Zs?autoplay=1&mute=1&loop=1&playlist=UZVQN07C3Zs" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+      </div>
+    </section>
+
+    <!-- COMMENTS (20) -->
+    <section>
+      <h2>Fan Comments</h2>
+      <div class="card comments">
+        <div class="comment"><span class="tag">GamerPro92</span> • 2h ago — This channel is fire! 🔥</div>
+        <div class="comment"><span class="tag">EpicPlayz</span> • 3h ago — Love your edits bro!</div>
+        <div class="comment"><span class="tag">SneakyFox</span> • 5h ago — Always entertaining 😎</div>
+        <div class="comment"><span class="tag">PixelMaster</span> • 6h ago — Waiting for the next live!</div>
+        <div class="comment"><span class="tag">ShadowHunter</span> • 8h ago — That last clip was insane!</div>
+        <div class="comment"><span class="tag">NoScopeKing</span> • 11h ago — Keep grinding 💪</div>
+        <div class="comment"><span class="tag">RapidFire</span> • 12h ago — Subscribed instantly!</div>
+        <div class="comment"><span class="tag">ChillVibes</span> • 14h ago — Awesome vibes here 🎵</div>
+        <div class="comment"><span class="tag">Legend27</span> • 18h ago — Best gaming channel ever</div>
+        <div class="comment"><span class="tag">CrazyCat</span> • 20h ago — I laughed so hard 😂</div>
+        <div class="comment"><span class="tag">EliteSniper</span> • 1d ago — Respect for the hustle</div>
+        <div class="comment"><span class="tag">FireballYT</span> • 1d ago — This deserves more views!</div>
+        <div class="comment"><span class="tag">IceWolf</span> • 1d ago — Can't stop watching</div>
+        <div class="comment"><span class="tag">MemeLord</span> • 2d ago — That ending tho 🤣</div>
+        <div class="comment"><span class="tag">NightOwl</span> • 2d ago — Streaming skills 💯</div>
+        <div class="comment"><span class="tag">PixelPunk</span> • 3d ago — Quality content</div>
+        <div class="comment"><span class="tag">ViralKing</span> • 3d ago — Shared to my friends</div>
+        <div class="comment"><span class="tag">QuickScope</span> • 4d ago — Epic gameplay 🎯</div>
+        <div class="comment"><span class="tag">ProBuilder</span> • 4d ago — Keep it up champ!</div>
+        <div class="comment"><span class="tag">LaughTrack</span> • 5d ago — Can't wait for the next one!</div>
+      </div>
+    </section>
+
+    <!-- MINI GAME: CLICK CHALLENGE -->
+    <section>
+      <h2>Play: Click Challenge</h2>
+      <div class="card gameBox">
+        <canvas id="gameCanvas" width="500" height="400"></canvas>
+        <p class="muted" style="text-align:center;margin-top:10px">Click the moving SPTEL logo as many times as you can in 30 seconds!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div class="muted">© <span id="year"></span> The SPTEL Boy • All rights reserved</div>
+      <!-- TODO: replace with your YouTube handle if different -->
+      <a class="btn" href="https://youtube.com/@thesptelboy2.030" target="_blank">Visit my YouTube</a>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ===== Click Challenge Game =====
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    let x = Math.random()*450, y = Math.random()*350, score = 0, timeLeft = 30;
+
+    const logo = new Image();
+    // Uses local file; put channels4_profile.jpg next to index.html
+    logo.src = 'channels4_profile.jpg';
+
+    function draw(){
+      ctx.clearRect(0,0,500,400);
+      ctx.drawImage(logo, x, y, 50, 50);
+      ctx.fillStyle = '#fff';
+      ctx.font = '18px system-ui, sans-serif';
+      ctx.fillText(`Score: ${score}`, 10, 20);
+      ctx.fillText(`Time: ${timeLeft}`, 420, 20);
+    }
+    function moveLogo(){ x = Math.random()*450; y = Math.random()*350; draw(); }
+    canvas.addEventListener('click', (e)=>{
+      const r = canvas.getBoundingClientRect();
+      const cx = e.clientX - r.left; const cy = e.clientY - r.top;
+      if (cx>=x && cx<=x+50 && cy>=y && cy<=y+50){ score++; moveLogo(); }
+    });
+    const moveInterval = setInterval(moveLogo, 1000);
+    const timer = setInterval(()=>{
+      timeLeft--; if(timeLeft<=0){ clearInterval(timer); clearInterval(moveInterval); alert(`Time's up! Your score: ${score}`); }
+    }, 1000);
+    draw();
+  </script>
+</body>
+</html>
